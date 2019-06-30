@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>WiFi IO</title>
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="favicon.ico" />
+    </head>
+
+    <header>
+        <img src="logo.svg" atl="">
+    </header>
+
+    <body>
+        <div class="currentmodule">
+            <h1><strong>Module ID</strong></h1>
+            <h2>0.AH071</h2>
+        </div>
+
+        <div class="panel">
+            <table>
+                <tr>
+                    <th></th>
+                    <th>0</th>
+                    <th>1</th>
+                    <th>2</th>
+                    <th>3</th>
+                </tr>
+                <tr>
+                    <th>I</th>
+                    <th><p class="inputCircle" id="input0">?</p></th>
+                    <th><p class="inputCircle" id="input1">?</p></th>
+                    <th><p class="inputCircle" id="input2">?</p></th>
+                    <th><p class="inputCircle" id="input3">?</p></th>
+                </tr>
+                <tr>
+                    <th>O</th>
+                    <th><button class = "outputButton" id="output0" onclick="clickOutput('output0')">?</button></th>
+                    <th><button class = "outputButton" id="output1" onclick="clickOutput('output1')">?</button></th>
+                    <th><button class = "outputButton" id="output2" onclick="clickOutput('output2')">?</button></th>
+                    <th><button class = "outputButton" id="output3" onclick="clickOutput('output3')">?</button></th>
+                </tr>
+            </table>
+            
+        </div>
+
+        <script type="text/javascript">
+            function updateColorsOfInputs(in0, in1, in2, in3){
+                
+                document.getElementById("input0").style.backgroundColor = (in0 == 0) ? "#FF0031" : "#00BA31";
+                document.getElementById("input0").innerHTML = (in0 == 0) ? "LOW" : "HIGH";
+                document.getElementById("input1").style.backgroundColor = (in1 == 0) ? "#FF0031" : "#00BA31";
+                document.getElementById("input1").innerHTML = (in1 == 0) ? "LOW" : "HIGH";
+                document.getElementById("input2").style.backgroundColor = (in2 == 0) ? "#FF0031" : "#00BA31";
+                document.getElementById("input2").innerHTML = (in2 == 0) ? "LOW" : "HIGH";
+                document.getElementById("input3").style.backgroundColor = (in3 == 0) ? "#FF0031" : "#00BA31";
+                document.getElementById("input3").innerHTML = (in3 == 0) ? "LOW" : "HIGH";
+
+            };
+
+            function updateColorsOfOutputs(out0, out1, out2, out3){
+               
+                document.getElementById("output0").style.backgroundColor = (out0 == 0) ? "#FF0031" : "#00BA31";
+                document.getElementById("output0").innerHTML = (out0 == 0) ? "OFF" : "ON";
+                document.getElementById("output1").style.backgroundColor = (out1 == 0) ? "#FF0031" : "#00BA31";
+                document.getElementById("output1").innerHTML = (out1 == 0) ? "OFF" : "ON";
+                document.getElementById("output2").style.backgroundColor = (out2 == 0) ? "#FF0031" : "#00BA31";
+                document.getElementById("output2").innerHTML = (out2 == 0) ? "OFF" : "ON";
+                document.getElementById("output3").style.backgroundColor = (out3 == 0) ? "#FF0031" : "#00BA31";
+                document.getElementById("output3").innerHTML = (out3 == 0) ? "OFF" : "ON";
+
+            }
+
+            function clickOutput(outputid){
+                updateColorsOfInputs(1,0,0,1);
+                updateColorsOfOutputs(1,1,0,1);
+            };
+        </script>
+
+    </body>
+  
+
+    <footer>
+        <span id="groupName">Diony R - Marcus V - Murillo L</span>
+    </footer>
+</html>

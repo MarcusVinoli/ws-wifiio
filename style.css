@@ -1,0 +1,116 @@
+header img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    width: 400px;
+}
+
+div.currentmodule h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 12px;
+    text-align: center;
+    margin: 0px;
+    margin-top: 20px;
+    padding: 0 px;
+}
+
+div.currentmodule h2{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+    text-align: center;
+    padding: 2px;
+    margin: 0px;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-color: #E6E6E6;
+
+    width: 20%;
+    min-width: 100px;
+}
+
+
+div.panel{
+    text-align: center;
+    padding: 30px;
+
+}
+
+div.panel table{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
+    display: inline;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.panel table tr{
+    padding: 60px;
+    vertical-align: middle;
+}
+
+div.panel table tr th{
+    height: 120;
+    width: 120;
+    padding: 1px;
+}
+
+div.panel p.inputCircle{
+    padding: 10px;
+    margin: 10px;
+    height: 80px;
+    width: 80px;
+
+    border-radius: 50%;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #E6E6E6;
+    
+    line-height: 77px;
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+    color: #FEFEFE;
+
+    text-anchor: middle;
+
+    background-color: #C7C7C7;
+    display: inline-block;
+}
+
+div.panel table tr th button.outputButton{
+    outline-offset: 11px;
+    padding: 10px;
+    margin: 10px;
+    height: 120px;
+    width: 120px;
+
+    border-radius: 50%;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #E6E6E6;
+
+    line-height: 77px;
+    
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+    color: #FEFEFE;
+
+    background-color: #C7C7C7;
+    display: inline-block;
+    
+    cursor: pointer;
+}
+
+span#groupName{
+    position: fixed;
+    bottom: 20px;
+    left: 0px;
+    padding: 5px;
+    width: 100%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 12px;
+    text-align: center;
+}
